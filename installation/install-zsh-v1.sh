@@ -20,10 +20,10 @@ if pacman -Qi $package &> /dev/null; then
 else
 
 	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+	if pacman -Qi yay &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+		echo "Installing with yay"
+		yay -S --noconfirm   $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		
@@ -72,10 +72,10 @@ if pacman -Qi $package &> /dev/null; then
 else
 
 	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+	if pacman -Qi yay &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+		echo "Installing with yay"
+		yay -S --noconfirm --noedit  $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		
@@ -140,10 +140,10 @@ if pacman -Qi $package &> /dev/null; then
 else
 
 	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+	if pacman -Qi yay &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+		echo "Installing with yay"
+		yay -S --noconfirm --noedit  $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		
@@ -193,10 +193,10 @@ if pacman -Qi $package &> /dev/null; then
 else
 
 	#checking which helper is installed
-	if pacman -Qi packer &> /dev/null; then
+	if pacman -Qi yay &> /dev/null; then
 
-		echo "Installing with packer"
-		packer -S --noconfirm --noedit  $package
+		echo "Installing with yay"
+		yay -S --noconfirm --noedit  $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		

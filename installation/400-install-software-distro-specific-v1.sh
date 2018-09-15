@@ -126,7 +126,7 @@ else
 	if pacman -Qi yay &> /dev/null; then
 
 		echo "Installing with yay"
-		yay -S --noconfirm --noedit  $package
+		yay -S --noconfirm   $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 		
